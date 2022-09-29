@@ -1,4 +1,4 @@
-package com.product.configException;
+package com.product.config.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,5 +15,11 @@ public class ExceptionHandler {
 		return new ResponseEntity<>(details,HttpStatus.BAD_REQUEST);
 	}
 	
-	
+	@org.springframework.web.bind.annotation.ExceptionHandler(AuthenticationException.class)
+	public ResponseEntity<?> handleAuthenticationException(AuthenticationException authenticationException){
+		var details = new ExceptionDetails();
+		details.setStatus(HttpStatus.UNAUTHORIZED.value());
+		details.setMessage(authenticationException.getMessage());
+		return new ResponseEntity<>(details,HttpStatus.UNAUTHORIZED);
+	}
 }

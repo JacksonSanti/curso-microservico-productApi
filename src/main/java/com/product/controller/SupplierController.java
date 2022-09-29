@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.product.configException.SuccessResponse;
+import com.product.config.Exception.SuccessResponse;
 import com.product.dto.SupplierRequest;
 import com.product.dto.SupplierResponse;
 import com.product.service.SupplierService;

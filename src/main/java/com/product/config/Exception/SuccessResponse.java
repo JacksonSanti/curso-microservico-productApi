@@ -1,4 +1,4 @@
-package com.product.configException;
+package com.product.config.Exception;
 
 import org.springframework.http.HttpStatus;
 

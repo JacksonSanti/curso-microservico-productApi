@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.product.configException.SuccessResponse;
-import com.product.configException.ValidationException;
+import com.product.config.Exception.SuccessResponse;
+import com.product.config.Exception.ValidationException;
 import com.product.dto.CategoryRequest;
 import com.product.dto.CategoryResponse;
 import com.product.model.Categories;
